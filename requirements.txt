@@ -1,0 +1,7 @@
+python-dotenv==1.0.1
+openai==1.65.5
+anthropic==0.49.0
+gradio==5.21.0
+pandas
+numpy
+pyarrow

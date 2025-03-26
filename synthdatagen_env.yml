@@ -1,0 +1,17 @@
+name: synthdatagen
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip      
+  - python-dotenv
+  - jupyterlab
+  - ipywidgets
+  - pandas
+  - numpy
+  - pyarrow
+  - pip:
+    - openai==1.65.5
+    - anthropic==0.49.0
+    - gradio==5.21.0

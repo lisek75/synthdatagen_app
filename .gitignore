@@ -1,0 +1,15 @@
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore output folder
+output/
+
+# Ignore environment files
+.env
+
+# Ignore Python cache files
+**/__pycache__/
+*.py[cod]
+
+# Ignore .gitattributes file
+.gitattributes
