@@ -1,4 +1,4 @@
-# 🧬 SynthDataGen: AI-Powered Synthetic Dataset Generator
+# 🧬SynthDataGen: AI-Powered Synthetic Data Generator 
 
 <img src="assets/logo.jpg" alt="DataSynth_logo" width="200">
 
@@ -11,7 +11,9 @@
 
 
 ## 📖 Overview  
-**SynthDataGen** is an AI-powered tool that creates **realistic, fake data** for any project. You don’t need to collect real information—instead, just tell SynthDataGen what kind of data you want, and it will **quickly generate** it. Thanks to its **easy-to-use web interface** built with Gradio, **anyone** can start making custom datasets right away.
+**SynthDataGen** (short for Synthetic Dataset Generator) is an **AI-powered** tool designed for researchers, data scientists, and developers. It allows users to **generate realistic synthetic data** on demand—no need to collect or handle real information. Simply describe the type of dataset you need, and SynthDataGen will generate it instantly.
+
+The app features a **user-friendly** web interface built with Gradio, making it accessible to both technical and non-technical users.
 
 ### 🔑 **Key Features**  
 - The app can generate **various types of datasets**, such as **tables**, **time-series data**, or **text content**.
