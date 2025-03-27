@@ -86,8 +86,8 @@ To run the app using Docker, you can either build the image yourself or use the 
 - Build and run the app locally:
 Build the image from the provided Dockerfile using your own Docker Hub username:
 ```bash
-docker build -t <user-dockerhub-username>/synthdatagen:v1.0 .
-docker run -d --name synthdatagen-container -p 7860:7860 --env-file .env <user-dockerhub-username>/synthdatagen:v1.0
+docker build -t <user-dockerhub-username>/synthdatagen:v1.0.0 .
+docker run -d --name synthdatagen-container -p 7861:7860 --env-file .env <user-dockerhub-username>/synthdatagen:v1.0.0
 ```
 This will build the Docker image and run the app in a container.
 
@@ -96,8 +96,8 @@ Pull the pre-built image from the Docker Hub repository (⚠️make sure to use 
 Check: https://hub.docker.com/r/lizk75/synthdatagen/tags 
 
 ```bash
-docker pull lizk75/synthdatagen:v1.0
-docker run -d --name synthdatagen-container -p 7860:7860 --env-file .env lizk75/synthdatagen:v1.0
+docker pull lizk75/synthdatagen:v1.0.0
+docker run -d --name synthdatagen-container -p 7861:7860 --env-file .env lizk75/synthdatagen:v1.0.0
 ```
 
 
