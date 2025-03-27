@@ -143,7 +143,7 @@ def build_ui(css_path="assets/styles.css"):
                         )
 
             # Hidden file component for dataset download
-            file_download = gr.File(label="Download Dataset", visible=False, elem_id="download-box")
+            file_download = gr.File(visible=False, elem_id="download-box", label=None)
 
             # Component to display status messages
             status_message = gr.Markdown("", label="Status")

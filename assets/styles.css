@@ -20,11 +20,14 @@ html, body, #app, body > div, .gradio-container {
     color: white;
 }
 
+#app-container h4,
 #app-container p,
 #app-container ol,
-#app-container li {
+#app-container li,
+#app-container strong {
     font-size: 16px;
     line-height: 1.6;
+    color: white !important; 
 }
 
 #app-title {
@@ -49,7 +52,7 @@ html, body, #app, body > div, .gradio-container {
 
 #intro-text {
     font-size: 16px;
-    color: white;
+    color: white !important; 
     margin-top: 20px;
     line-height: 1.6;
 }
@@ -62,7 +65,7 @@ html, body, #app, body > div, .gradio-container {
 
 .button-link {
     background: linear-gradient(to left, #ff416c, #ff4b2b);
-    color: white;
+    color: white !important; 
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
@@ -83,16 +86,19 @@ html, body, #app, body > div, .gradio-container {
 
 .label-box label {
     background-color: #1f2937;
-    color: white;
     padding: 4px 10px;
     border-radius: 8px;
     display: inline-block;
     margin-bottom: 6px;
 }
 
+.label-box span {
+    color: white !important;
+}
+
 .label-box {
     background-color: #1f2937;
-    color: white;
+    color: white; 
     padding: 4px 10px;
     border-radius: 8px;
     display: inline-block;
@@ -116,6 +122,7 @@ html, body, #app, body > div, .gradio-container {
 
 textarea, input[type="text"] {
     background-color: #374151 !important;
+    color: white !important;
 }
 
 #custom-dropdown .wrap {
@@ -123,12 +130,38 @@ textarea, input[type="text"] {
     border-radius: 6px;
 }
 
-#custom-dropdown ul {
+input[role="listbox"] {
+    color: white !important;
     background-color: #374151 !important;
+}
+.dropdown-arrow {
+    color: white !important;
+}
+
+ul[role="listbox"] {
+    background-color: #111827 !important;  /* dark navy */
+    color: white !important;
+    border-radius: 6px;
+    padding: 4px 0;
+}
+
+ul[role="listbox"] li {
+    color: white !important;
+    padding: 8px 12px;
+}
+
+ul[role="listbox"] li:hover {
+    background-color: #1f2937 !important;  /* slightly lighter hover */
+}
+
+ul[role="listbox"] li[aria-selected="true"] {
+    background-color: #111827 !important;  /* same dark as others */
+    color: white !important;
 }
 
 input[type="number"] {
-    background-color: #374151
+    background-color: #374151;
+    color: white !important; 
 }
 
 #business-problem-box {
@@ -139,9 +172,14 @@ input[type="number"] {
     width: 100% !important;
 }
 
+#business-problem-box textarea::placeholder {
+    color: #9ca3af !important; /* Tailwind's "gray-400" */
+}
+
+
 #run-btn {
     background: linear-gradient(to left, #ff416c, #ff4b2b);
-    color: white;
+    color: white !important; 
     font-weight: bold;
     border: none;
     padding: 10px 20px;
@@ -160,18 +198,31 @@ input[type="number"] {
     border-radius: 8px;
     padding: 10px;
     margin-top: 16px;
-    color: white;
     font-weight: 500;
-}
-
-#download-box .label {
-    color: #ff416c;
-    font-weight: bold;
-    font-size: 15px;
 }
 
 #download-box a {
     color: #00c3ff !important;
     text-decoration: underline;
     font-weight: bold;
+}
+#download-box td.filename {
+    color: rgb(255, 255, 255) !important;
+}
+
+#download-box .file-preview-holder,
+#download-box .file-preview,
+#download-box table,
+#download-box tr,
+#download-box td {
+    background-color: #1f2937 !important;
+}
+
+/* #download-box label {
+    background-color: #1f2937 !important;
+    color: white !important;
+    font-weight: bold;
+} */
+#download-box > label {
+    display: none !important;
 }
