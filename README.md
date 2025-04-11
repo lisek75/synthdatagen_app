@@ -11,42 +11,27 @@
 
 
 ## 📖 Overview  
-**SynthDataGen** (short for Synthetic Dataset Generator) is an **AI-powered** tool designed for researchers, data scientists, and developers. It allows users to **generate realistic synthetic data** on demand—no need to collect or handle real information. Simply describe the type of dataset you need, and SynthDataGen will generate it instantly.
+SynthDataGen is an AI-powered tool that lets you instantly generate realistic synthetic datasets by simply describing what you need. Built with a user-friendly Gradio interface, it's perfect for researchers, data scientists, and developers.
 
-The app features a **user-friendly** web interface built with Gradio, making it accessible to both technical and non-technical users.
-
-### 🔑 **Key Features**  
-- The app can generate **various types of datasets**, such as **tables**, **time-series data**, or **text content**.
-- The output can be saved in different **formats**, including **JSON**, **CSV**, **Parquet**, or **Markdown**.
-- **AI models** like **GPT** and **Claude** are used to automatically create the dataset based on the task.
-- A short **description of the desired dataset** is all that's needed to trigger the generation process.
-- A **download link** is provided once the dataset is ready, making it easy to save and use.
-- The **interface updates options automatically** and includes helpful **examples for inspiration**. 
-
-### 🎯 **How It Works**  
-1️⃣ Describe the dataset to generate by entering a short business problem or topic.
-
-2️⃣ Select the dataset type, output format, AI model, and number of samples.
-
-3️⃣ Download the generated dataset once it's ready — clean, structured, and ready to use..  
-
-### 🤔 **Why Choose SynthDataGen?**  
-- ⏰ **Time Saver**: Automatically creates tables, time-series, or text data—no need to gather real data yourself.  
-- ⚙️ **Flexible and Accessible**: Supports multiple formats (JSON, CSV, Parquet, Markdown) with a beginner-friendly interface.  
-- 🤖 **Powered by GPT & Claude**: Uses two top AI models to produce realistic synthetic data for prototyping or research.  
+### 🔑 **Key Highlights**  
+- Generate data from a short description
+- Choose data type: tables, time-series, or text
+- Select output format: CSV, JSON, Parquet, or Markdown
+- Powered by AI models like GPT and Claude
+- Clean, structured datasets with instant download
 
 ### 🔧 **SynthDataGen Customization**
-SynthDataGen is fully customizable through Python code. You can easily modify:
-- ✏️ **System prompt** to control how the AI models generate code  
-- 🤖 Easily add **new frontier** or **open-source models** (e.g., LLaMA, DeepSeek, Qwen), or integrate any model from **Hugging Face libraries** and **inference endpoints**.
-- 📊 **Dataset types**, by adding new categories like image metadata, dialogue transcripts ...
-- 📁 **Output formats**, such as YAML, XML ...
-- 🎨 **Interface styling**, including layout, colors, and themes  
+SynthDataGen is fully customizable through Python code, allowing you to tailor the tool to your needs:
+- Modify the system prompt to control how AI models generate data
+- dd new models, including Frontier, open-source models, or any model from Hugging Face libraries or inference endpoints.
+- Extend dataset types with custom categories such as image metadata or dialogue transcripts
+- Support additional output formats, including YAML and XML
+- Customize the interface styling, including layout, colors, and themes
 
-### 🏗️ **Architecture** 
+### 🏗️ **Workflow** 
 
-<a href="func_architecture.png"><img src="assets/func_architecture.png"></a>
-<a href="tech_architecture.png"><img src="assets/tech_architecture.png"></a>
+![SynthDataGen Workflow](https://github.com/lisek75/synthdatagen_app/blob/main/assets/synthdatagen_workflow.png?raw=true)
+
 
 ## ⚙️ Setup & Installation  
 
@@ -102,18 +87,17 @@ docker run -d --name synthdatagen-container -p 7861:7860 --env-file .env lizk75/
 
 
 ## 🧑‍💻 Usage Guide  
-- You can launch the app directly from:
-    - The **demo link** provided at the top of this README.
-    - Or by executing it **locally** using the command `python app.py` from Visual Studio or any other IDE.
-- **Describe your dataset** by entering a clear business problem or topic.
-- Select the **dataset type** and **output format**.
-- Choose an **AI model** (GPT or Claude).
-- Set the desired **number of samples**.
-- Click **Create Dataset** and download the generated file.
+You can use SynthDataGen in two ways: through the demo link or by running it locally with `python app.py`.
+To generate a dataset:
+- Enter a short description of the dataset you need
+- Select the dataset type, format, and AI model (GPT or Claude)
+- Choose the number of samples
+- Click Create Dataset and download the result
 
 
 ## 📓 Google Colab
-A **notebook version** is available for users who prefer running the app in a notebook environment. The notebook includes additional **open-source models ** that require a **GPU**, which is why it's recommended to run it on Google Colab or a local machine with GPU support.
+A notebook version is available for users who prefer working in a notebook environment. It includes additional open-source models that require a GPU, so it's best run on Google Colab or a local machine with GPU support.
 
-https://github.com/lisek75/nlp_llms_notebook/blob/main/07_data_generator.ipynb
+[A notebook version is available here](https://github.com/lisek75/nlp_llms_notebook/blob/main/07_data_generator.ipynb)
+
 
